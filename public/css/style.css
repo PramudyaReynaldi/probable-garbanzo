@@ -1,0 +1,290 @@
+* {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+.navbar-nav {
+  gap: 32px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.btn-car {
+  background-color: #5cb85f;
+  color: #ffffff;
+  border-radius: 2px;
+  height: 36px;
+  width: 81px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border: none;
+}
+/* NAVBAR END */
+
+/* CONTENT 1 */
+.home {
+  padding-top: 6rem;
+}
+.content-judul {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.content-paragraf {
+  color: #000000;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+.btn-content {
+  background-color: #5cb85f;
+  color: #ffffff;
+  border-radius: 2px;
+  padding: 8px 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+}
+.img-content {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .img-content {
+    margin-top: 2rem;
+  }
+  .home {
+    padding-top: 2rem;
+  }
+}
+/* CONTENT 1 END */
+
+/* OUR SERVICES */
+.services {
+  padding-top: 10rem;
+}
+.detail-service p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+.detail-service {
+  padding-top: 3rem;
+  padding-left: 2.1rem;
+}
+.detail-service h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+.list-car,
+ul {
+  list-style-type: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+.list-car,
+li {
+  margin: 15px 0;
+}
+.list-car ul li {
+  gap: 20px;
+  display: flex;
+}
+/* OUR-SERVICES END*/
+
+/* WHY US */
+.why-us {
+  padding-top: 7rem;
+}
+.why-us-text,
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.why-us-text,
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.why-us-card {
+  min-height: 210px;
+}
+.why-us-card h6 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+}
+.why-us-card p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media screen and (max-width: 991px) {
+  .why-us-text {
+    text-align: center;
+  }
+}
+/* WHY US END */
+
+/* TESTIMONIAL */
+.testimonial {
+  padding-top: 10rem;
+}
+.testimonial-text {
+  text-align: center;
+}
+.single-testimonial {
+  background: #f1f3ff;
+  padding-left: 40px;
+  position: relative; 
+  width: 550px;
+  height: 100%;
+}
+.img-area {
+  width: 80px;
+  height: 80px;
+  left: 8%;
+  margin-top: -75px;
+  position: absolute;
+  top: 50%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.img-area img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.testi-text {
+  padding: 40px 20px 40px 100px;
+}
+.testi-text p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+.testi-text .fa-solid {
+  color: #f9cc00;
+}
+@media screen and (max-width: 1199px) {
+  .owl-carousel .item {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 999px) {
+  .owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* jquery styling testimonial*/
+.owl-carousel div.owl-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 40px;
+  padding-top: 3rem;
+}
+.owl-prev,
+.owl-next {
+  position: absolute;
+}
+.owl-next {
+  right: 45%;
+}
+.owl-prev {
+  left: 45%;
+}
+.owl-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 995px) {
+  .owl-next {
+    right: 35%;
+  }
+  .owl-prev {
+    left: 35%;
+  }
+}
+/* TESTIMONIAL END */
+
+/* SEWA MOBIL */
+.sewa-mobil {
+  padding-top: 10rem;
+}
+.sewa-mobil .container-sm {
+  background-color: #0d28a6;
+}
+.sewa-mobil .container-sm h2 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 150%;
+}
+.sewa-mobil .container-sm p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.btn-mulai-sewa {
+  color: #ffffff;
+  background-color: #5cb85f;
+  width: 140px;
+  height: 36px;
+  font-size: 14px;
+}
+/* END */
+
+/* FAQ */
+.faq-content {
+  padding-top: 10rem;
+}
+.accordion-item {
+  margin: 20px 0;
+}
+.faq-content h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+.faq-content p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* FAQ END */
+
+/* FOOTER */
+.footer {
+  padding-top: 10rem;
+}
+.footer a {
+  font-weight: 550;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+}
