@@ -26,13 +26,19 @@ class App {
   async filter() {
     const driver = document.getElementById("tipedriver").value
     console.log(driver)
+
+    // Tanggal
     const tanggal = document.getElementById("tanggal").value
     console.log(tanggal)
 
     const cars = await Binar.listCars((e) => {
       // tambahkan fungsi filter
-      return e.typeDriver === driver
+      return e.typeDriver === driver, e.availableAt = tanggal
     });
+
+    const tgl = await Binar.listCars((x) => {
+      return x.timeAt === tanggal
+    })
 
     Car.init(cars);
     document.getElementById("cars-container").innerHTML = ''
@@ -41,6 +47,8 @@ class App {
       node.innerHTML = car.render();
       document.getElementById("cars-container").appendChild(node);
     });
+
+    
   }
 
   async load(filter) {

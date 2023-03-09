@@ -45,15 +45,41 @@ class Car {
       return `
       <div class="container mt-5">
          <div class="row">
-            <div class="col">
+            <div class="col-4">
                <div class="card" style="width: 18rem;">
                   <div class="card-body">
                      <img src="${this.image}" alt="${this.manufacture}"class="img-fluid" >
                      <p class="card-text mt-3">Nama/Tipe Mobil</p>
                      <p><b>Rp 430.000 / hari</b></p>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                     <p>Tipe Driver: <b>${this.typeDriver}</b></p>
                      <p>available at: <b>${this.availableAt}</b></p>
+                     <p>Tipe Driver: <b>${this.typeDriver}</b></p>
+                     <a href="#" class="btn btn-success btn-js">Pilih Mobil</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                     <img src="${this.image}" alt="${this.manufacture}"class="img-fluid" >
+                     <p class="card-text mt-3">Nama/Tipe Mobil</p>
+                     <p><b>Rp 430.000 / hari</b></p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                     <p>available at: <b>${this.availableAt}</b></p>
+                     <p>Tipe Driver: <b>${this.typeDriver}</b></p>
+                     <a href="#" class="btn btn-success btn-js">Pilih Mobil</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                     <img src="${this.image}" alt="${this.manufacture}"class="img-fluid" >
+                     <p class="card-text mt-3">Nama/Tipe Mobil</p>
+                     <p><b>Rp 430.000 / hari</b></p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                     <p>available at: <b>${this.availableAt}</b></p>
+                     <p>Tipe Driver: <b>${this.typeDriver}</b></p>
                      <a href="#" class="btn btn-success btn-js">Pilih Mobil</a>
                   </div>
                </div>

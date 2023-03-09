@@ -18,6 +18,7 @@ class Binar {
         capacity,
         typeDriver,
         availableAt,
+        timeAt,
       };
     })
   }
