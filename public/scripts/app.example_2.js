@@ -26,10 +26,14 @@ class App {
   async filter() {
     const driver = document.getElementById("tipedriver").value
     console.log(driver)
+    const tanggal = document.getElementById("tanggal").value
+    console.log(tanggal)
+
     const cars = await Binar.listCars((e) => {
       // tambahkan fungsi filter
       return e.typeDriver === driver
     });
+
     Car.init(cars);
     document.getElementById("cars-container").innerHTML = ''
     Car.list.forEach((car) => {
