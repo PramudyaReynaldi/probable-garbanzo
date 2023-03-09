@@ -52,8 +52,9 @@ class Car {
                      <p class="card-text mt-3">Nama/Tipe Mobil</p>
                      <p><b>Rp 430.000 / hari</b></p>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                     <p>available at: <b>${this.availableAt}</b></p>
+                     <p>Tersedia Tanggal: <b>${this.availableAt}</b></p>
                      <p>Tipe Driver: <b>${this.typeDriver}</b></p>
+                     <p>Kapasitas: <b>${this.capacity}</b></p>
                      <a href="#" class="btn btn-success btn-js">Pilih Mobil</a>
                   </div>
                </div>
@@ -63,10 +64,11 @@ class Car {
                   <div class="card-body">
                      <img src="${this.image}" alt="${this.manufacture}"class="img-fluid" >
                      <p class="card-text mt-3">Nama/Tipe Mobil</p>
-                     <p><b>Rp 430.000 / hari</b></p>
+                     <p><b>Rp 230.000 / hari</b></p>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                     <p>available at: <b>${this.availableAt}</b></p>
+                     <p>Tersedia Tanggal: <b>${this.availableAt}</b></p>
                      <p>Tipe Driver: <b>${this.typeDriver}</b></p>
+                     <p>Kapasitas: <b>${this.capacity}</b></p>
                      <a href="#" class="btn btn-success btn-js">Pilih Mobil</a>
                   </div>
                </div>
@@ -76,10 +78,11 @@ class Car {
                   <div class="card-body">
                      <img src="${this.image}" alt="${this.manufacture}"class="img-fluid" >
                      <p class="card-text mt-3">Nama/Tipe Mobil</p>
-                     <p><b>Rp 430.000 / hari</b></p>
+                     <p><b>Rp 200.000 / hari</b></p>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                     <p>available at: <b>${this.availableAt}</b></p>
+                     <p>Tersedia Tanggal: <b>${this.availableAt}</b></p>
                      <p>Tipe Driver: <b>${this.typeDriver}</b></p>
+                     <p>Kapasitas: <b>${this.capacity}</b></p>
                      <a href="#" class="btn btn-success btn-js">Pilih Mobil</a>
                   </div>
                </div>
@@ -98,3 +101,7 @@ class Car {
 // <p>tipe driver: <b>${this.typeDriver}</b></p>
 // <p>available at: <b>${this.availableAt}</b></p>
 // <img src="${this.image}" alt="${this.manufacture}" width="64px"></img>
+
+
+
+
