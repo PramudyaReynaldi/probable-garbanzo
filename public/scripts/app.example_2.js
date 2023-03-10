@@ -39,7 +39,6 @@ class App {
       // tambahkan fungsi filter
         return (
           e.typeDriver === driver && 
-          e.availableAt === tgl + 1 &&
           e.capacity === jmlPenumpang 
         )  
     });
