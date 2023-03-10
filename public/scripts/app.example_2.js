@@ -28,18 +28,20 @@ class App {
     const driver = document.getElementById("tipedriver").value
     console.log(driver)
 
-    // Tanggal
-    // const tanggal = document.getElementById("tanggal").value
-    // console.log(tanggal)
-    // const [tahun, bulan, hari] = tanggal.split("-")
-
-    // Jumlah Penumpang
     const jmlPenumpang = parseInt(document.getElementById("jumlah-penumpang").value)
     console.log(jmlPenumpang)
+
+    // Tanggal
+    const tgl = document.getElementById("tanggal").value
+    console.log(tgl)
     
     const cars = await Binar.listCars((e) => {
       // tambahkan fungsi filter
-      return  e.typeDriver === driver && e.capacity === jmlPenumpang
+        return (
+          e.typeDriver === driver && 
+          e.availableAt === tgl + 1 &&
+          e.capacity === jmlPenumpang 
+        )  
     });
     
     Car.init(cars);

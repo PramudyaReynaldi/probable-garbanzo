@@ -11,7 +11,7 @@
    line-height: 20px;
 }
 button .btn-car {
-   /* background-color: #5cb85f; */
+   background-color: #5cb85f;
    color: #ffffff;
    border-radius: 2px;
    height: 36px;
@@ -142,7 +142,7 @@ input[type="time"] {
 .btn-js {
    width: 100%;
    background-color: #5CB85F;
-
+   font-family: Helvetica;
 }
 /* JS STYLE END*/
 
