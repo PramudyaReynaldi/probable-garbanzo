@@ -27,10 +27,9 @@ class App {
     // Tipe Driver
     const driver = document.getElementById("tipedriver").value
     console.log(driver)
-
+    // Jumlah Penumpang
     const jmlPenumpang = parseInt(document.getElementById("jumlah-penumpang").value)
     console.log(jmlPenumpang)
-
     // Tanggal
     const tgl = document.getElementById("tanggal").value
     console.log(tgl)
@@ -38,15 +37,16 @@ class App {
     const cars = await Binar.listCars((e) => {
       // tambahkan fungsi filter
         return (
-          e.typeDriver === driver && 
-          e.capacity === jmlPenumpang 
-        )  
+          !driver || e.typeDriver === driver && 
+          !jmlPenumpang || e.capacity === jmlPenumpang
+        );
     });
     
     Car.init(cars);
     document.getElementById("cars-container").innerHTML = ''
     Car.list.forEach((car) => {
       const node = document.createElement("div");
+      node.setAttribute(`class`, 'col-md-6 col-lg-4');
       node.innerHTML = car.render();
       document.getElementById("cars-container").appendChild(node);
     });
