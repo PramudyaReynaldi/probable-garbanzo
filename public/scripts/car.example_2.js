@@ -54,7 +54,7 @@ class Car {
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                      <p>Tersedia Tanggal: <b>${this.availableAt}</b></p>
                      <p>Tipe Driver: <b>${this.typeDriver}</b></p>
-                     <p>Kapasitas: <b>${this.capacity}</b></p>
+                     <p>Kapasitas: <b>${this.capacity} Orang</b></p>
                      <a href="#" class="btn btn-success btn-js">Pilih Mobil</a>
                   </div>
                </div>
@@ -68,7 +68,7 @@ class Car {
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                      <p>Tersedia Tanggal: <b>${this.availableAt}</b></p>
                      <p>Tipe Driver: <b>${this.typeDriver}</b></p>
-                     <p>Kapasitas: <b>${this.capacity}</b></p>
+                     <p>Kapasitas: <b>${this.capacity} Orang</b></p>
                      <a href="#" class="btn btn-success btn-js">Pilih Mobil</a>
                   </div>
                </div>
@@ -82,7 +82,7 @@ class Car {
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                      <p>Tersedia Tanggal: <b>${this.availableAt}</b></p>
                      <p>Tipe Driver: <b>${this.typeDriver}</b></p>
-                     <p>Kapasitas: <b>${this.capacity}</b></p>
+                     <p>Kapasitas: <b>${this.capacity} Orang</b></p>
                      <a href="#" class="btn btn-success btn-js">Pilih Mobil</a>
                   </div>
                </div>

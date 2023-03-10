@@ -24,29 +24,23 @@ class App {
   };
 
   async filter() {
+    // Tipe Driver
     const driver = document.getElementById("tipedriver").value
     console.log(driver)
 
     // Tanggal
-    const tanggal = document.getElementById("tanggal").value
-    console.log(tanggal)
+    // const tanggal = document.getElementById("tanggal").value
+    // console.log(tanggal)
+    // const [tahun, bulan, hari] = tanggal.split("-")
 
-    // Penumpang
-    const jmlPenumpang = document.getElementById("jumlah-penumpang")
+    // Jumlah Penumpang
+    const jmlPenumpang = parseInt(document.getElementById("jumlah-penumpang").value)
     console.log(jmlPenumpang)
     
     const cars = await Binar.listCars((e) => {
       // tambahkan fungsi filter
-      return e.typeDriver === driver
+      return  e.typeDriver === driver && e.capacity === jmlPenumpang
     });
-
-    const tgl = await Binar.listCars((x) => {
-      return x.availableAt ===  tanggal
-    })
-
-    const penumpang = await Binar.listCars((y) => {
-      return y.capacity === jmlPenumpang
-    })
     
     Car.init(cars);
     document.getElementById("cars-container").innerHTML = ''
@@ -55,36 +49,7 @@ class App {
       node.innerHTML = car.render();
       document.getElementById("cars-container").appendChild(node);
     });
-
-    Car.init(penumpang);
-    document.getElementById("cars-container").innerHTML = ''
-    Car.list.forEach((car) => {
-      const newNode = document.createElement("div");
-      newNode.innerHTML = car.render();
-      document.getElementById("cars-container").appendChild(newNode);
-    });
   }
-
-  // Tanggal
-  // async filterTgl() {
-  //   const tanggal = document.getElementById("tanggal").value
-  //   console.log(tanggal)
-
-  //   const tgl = await Binar.listCars((x) => {
-  //     return x.availableAt === tanggal
-  //   })
-
-  //   Car.init(tgl);
-  //   document.getElementById("cars-container").innerHTML = ''
-  //   Car.list.forEach((car) => {
-  //     const node = document.createElement("div");
-  //     node.innerHTML = car.render();
-  //     document.getElementById("cars-container").appendChild(node);
-  //   });
-  // }
-  
-
-
 
   async load(filter) {
     const cars = await Binar.listCars(filter);

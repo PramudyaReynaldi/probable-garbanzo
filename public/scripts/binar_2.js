@@ -18,10 +18,13 @@ class Binar {
         capacity,
         typeDriver,
         availableAt,
-        timeAt,
       };
     })
   }
+  
+  // static filterByCapacity = (capacity) => {
+  //   return (car) => car.capacity === capacity;
+  // }
 
   static async listCars(filterer) {
     let cars;
