@@ -6,6 +6,7 @@
   "author": "Fikri Rahmat Nurhidayat <fnurhidayat@binar.co.id>",
   "license": "MIT",
   "private": false,
+  "type": "commonjs",
   "scripts": {
     "start": "node server/index.js"
   }

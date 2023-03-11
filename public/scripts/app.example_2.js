@@ -55,6 +55,13 @@ class App {
   async load(filter) {
     const cars = await Binar.listCars(filter);
     Car.init(cars);
+    this.carContainerElement.innerHTML = '';
+    Car.list.forEach((car) => {
+      const node = document.createElement("div");
+      node.setAttribute("class", "col-md-6 col-lg-4");
+      node.innerHTML = car.render();
+      this.carContainerElement.appendChild(node);
+    });
   }
 
   clear = () => {
