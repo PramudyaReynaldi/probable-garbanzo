@@ -18,6 +18,7 @@ class App {
   run = () => {
     Car.list.forEach((car) => {
       const node = document.createElement("div");
+      node.setAttribute(`class`, 'col-md-6 col-lg-4');
       node.innerHTML = car.render();
       this.carContainerElement.appendChild(node);
     });
@@ -31,8 +32,8 @@ class App {
     const jmlPenumpang = parseInt(document.getElementById("jumlah-penumpang").value)
     console.log(jmlPenumpang)
     // Tanggal
-    const tgl = document.getElementById("tanggal").value
-    console.log(tgl)
+    const tersediaPada = document.getElementById("tersedia").value
+    console.log(tersediaPada)
     
     const cars = await Binar.listCars((e) => {
       // tambahkan fungsi filter
