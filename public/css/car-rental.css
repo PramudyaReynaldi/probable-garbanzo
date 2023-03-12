@@ -154,7 +154,13 @@ input[type="time"] {
 }
 .img-js {
    object-fit: cover;
+   height: 222px;
+   width: 303px;
 }
+.card-body {
+   height: 586px;
+}
+
 /* JS STYLE END*/
 
 

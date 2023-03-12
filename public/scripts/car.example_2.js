@@ -46,7 +46,7 @@ class Car {
       
          <div class="card mt-5" style="width: 333px;">
             <div class="card-body">
-               <img src="${this.image}" alt="${this.manufacture}"class="img-fluid" >
+               <img src="${this.image}" alt="${this.manufacture}"class="img-js" >
                <p class="card-text mt-3">${this.model}</p>
                <p><b>Rp 430.000 / hari</b></p>
                <p>${this.description}</p>
